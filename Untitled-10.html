@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Business Department</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  /* background-color; he put it purple make it stay gray or change to dark gray */
+  color: #474747; /* text color */
+  padding: 1% 0;
+  font-size: 1.2em;  /* This increases text font */
+  border: 0; /* the black thing */
+  }
+  .navbar-brand {
+  float: left;
+  min-height: 55px;
+  padding: 0 15px 5px;
+  }
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover {
+color: #FFF;
+background-color: #222222; /* for the black thing in home */ /* #232323 try to change later on if it does not match with anything else */
+}
+.navbar-inverse .navbar-nav li a {
+  color: #D5D5D5; /* text color?? */
+  }
+  .carousel-caption { /* this moves the text in the sliders up */
+  top: 50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+  }
+  .btn { /* get started button */
+  font-size: 18px;
+  color: #FFF;
+  padding: 12px 22px;
+  background: #000000;
+  border: 2px solid #FFF;
+  }
+  .container {
+   margin-top: 30px;
+   margin-bottom: 26px;
+  }
+  #icon { 
+  max-width: 200px; /* to change the size of 3 images */
+  margin: 1% auto;
+  margin-top: 30px;
+  margin-bottom: 26px;
+  }
+  
+  footer { /* to design footer (no text) */
+  width: 100%;
+  background-color: #222222; 
+  padding: 5%;
+  color: #FFF; /* text color */
+  }
+  
+  .fa { 
+padding: 15px; /* social media pics size */
+font-size: 25px;
+color: #FFF;
+  }
+  .fa:hover {
+  color: #D5D5D5;
+  text-decoration: none;
+  }
+  
+  @media (max-width: 900px) {
+.fa {
+font-size: 20px;
+padding: 10px;
+}
+  }
+  
+  @media (max-width: 600px) {  /* this is to not show the getting started buttons and header on mobile */
+  .carousel-caption {
+display: none;
+}
+#icon {
+max-width: 150px;
+}
+h2 { /* h4 size in mobile */
+font-size: 1.7em;
+}
+  }
+  
+  .container1 {    margin: 4% auto;
+}
+ 
+ 
+<!-- login page -->
+body{
+margin: 0;
+padding: 0;
+background: url(img/Tower2.jpg);
+background-size: cover;
+background-position:center;
+font-family: sans-serif;
+}
+.login-box{
+width: 320px;
+height: 420px;
+background: rgba(0, 0, 0, 0.5);
+color: #fff;
+top: 50%;
+left:50%;
+position:absolute;
+transform: translate(-50%, -50%);
+box-sizing: border-box;
+padding: 70px 30px;
+}
+.avatar{
+width: 100px;
+height: 100px;
+border-radius: 50%;
+position: absolute;
+top: -50px;
+left: calc(50% - 50 px);
+ 
+}
+h1{
+margin: 0;
+padding: 0 0 20px;
+text-align: center;
+font-size: 22px;
+}
+.login-box p{
+margin: 0;
+padding: 0;
+font-weight: bold;
+}
+.login-box input{
+width: 100%;
+margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+border: none;
+border-bottom: 1 px solid #fff;
+background: transparent;
+outline: none;
+height: 40px;
+color: #fff;
+font-size: 16px;
+}
+.login-box input[type="submit"]
+{
+border: none;
+outline: none;
+height: 40px;
+background: #1c8adb;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+}
+.login-box input[type="submit"]:hover
+{
+cursor: pointer;
+background: #39dc79;
+color: #000;
+}
+ 
+ 
+.login-box a{
+text-decoration: none;
+font-size: 14px;
+color: #fff;
+}
+ 
+ 
+.login-box a:hover
+{
+color: #39dc79;
+}
+ 
+ 
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <!-- for mobile burgr nav -->
+                <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+<!--change to business logo -->  <a class="navbar-brand" href="indexReference.html"><img src="img/w3newbie.png"></a> 
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+<!--#for a ink -->    <li class="active"><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="deca.html">DECA</a></li>
+                    <li><a href="schoolstore.html">School Store</a></li>
+                    <li><a href="resources.html">Resources</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+                </ul>
+         </div>
+     </nav>
+	
+  
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> <!-- For sliders -->
+<ol class="carousel-indicators"> <!-- circles in sliders -->
+<li data-target="#myCarousel" data-slide-to="0" class="active"></li> <!-- first slide to activate -->
+<li data-target="#myCarousel" data-slide-to="1"></li>
+<li data-target="#myCarousel" data-slide-to="2"></li>
+</ol>
+    <div class="carousel-inner" role="listbox">
+    <div class="item active">
+    <img src="img/Tower.png" style="width:1826px;height:570px;"> <!-- image for first slider-->
+    <div class="carousel-caption">
+    <h1>impact the future</h1> <!-- header text for first slider-->
+    <br> <!-- line break -->
+    <button type="button" class="btn btn-default">Learn More</button> <!-- button text -->
+</div>
+</div> <!-- End Active -->
+    <div class="item">
+    <img src="img/deca12.jpg" style="width:1826px;height:570px;"> <!-- Next (2nd) image in slider -->
+                <div class="carousel-caption">
+    <h1>Aspiring to becoming a successful entrepreneur?</h1> <!-- header text for first slider-->
+    <br> <!-- line break -->
+    <button type="button" class="btn btn-default">Find Out How</button> <!-- button text -->
+</div>
+    </div>
+            <div class="item">
+    <img src="img/resources.jpeg" style="width:1826px;height:570px;"> <!-- 3rd image in slider -->
+                <div class="carousel-caption">
+    <h1>having trouble with your business assignment?</h1> <!-- header text for first slider-->
+    <br> <!-- line break -->
+    <button type="button" class="btn btn-default">Get Help</button> <!-- button text -->
+</div>
+    </div>
+    </div>
+        <!-- Start Slider Controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <!--button to move slides-->
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><!-- image for sliders (the arrows) -->
+        <span class="sr-only">Previous</span>
+        </a> <!-- this is for left side -->
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <!--button to move slides-->
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><!-- image for sliders (the arrows) -->
+        <span class="sr-only">Next</span>
+        </a> <!-- this is for right side-->
+     </div> <!-- End of slider -->
+     
+     
+<!-- test login -->
+ 
+ 
+<div class="login-box">
+<img src="img/Tower2.jpg" class="avatar">
+<h1>Impact the Future</h1>
+    <form>
+        <p>Username</p>
+        <input type="text" name="username" placeholder="Enter Username">
+        <p>Password</p>
+        <input type="password" name="password" placeholder="Enter Password">
+        <input type="submit" name="submit" value="Login">
+        <a href="#">Forget Password</a>
+        </form>
+ 
+</div>
+ 
+ 
+ 
+ 
+     <!-- footer -->
+     <footer class="container-fluid text-center">
+      <div class="row">
+        <div class="col-sm-4">
+            <h3>Contact Us</h3>
+                <br> <!-- line break -->
+                <h4>Our Address and contact info here.</h4>
+            </div>
+            <!-- For social media pics -->
+            <div class="col-sm-4">
+            <h3>Connect</h3>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <h3>©2018 CSS Studios</h3>
+            </div>
+            <div class="col-sm-4">
+            <img src="img/bunny.png" class="icon">
+            </div>
+        </div>
+     </footer>
+     
+</body>
+</html>
